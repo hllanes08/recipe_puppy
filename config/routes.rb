@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'recipies/search'
+
   root to: 'home#index'
   get 'home/index'
 

@@ -1,0 +1,20 @@
+.navbar-inverse{
+  background-color: #292b2c!important;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler{
+  color: #fff;
+}
+.navbar-inverse .navbar-brand{
+  position: absolute;
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link, .navbar-inverse .navbar-nav .nav-link.active, .navbar-inverse .navbar-nav .nav-link.open, .navbar-inverse .navbar-nav .open>.nav-link{
+  color: #fff;
+}
+
+.navbar-collapse{
+  display: flex!important;
+  width: 90%;
+  flex-basis: 90%;	  
+}
