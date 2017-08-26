@@ -1,7 +1,8 @@
 class RecipiesController < ApplicationController
   def search
     respond_to do |format|
-      format.json { render json: { recipies: Recipe.search(params[:prefix]) } } 
+      recipes = Recipe.search(params[:prefix])
+      format.json { render json: { recipies: (recipes.count > 20 ? recipes[0..19] : recipes)} } 
     end 
   end
 end
